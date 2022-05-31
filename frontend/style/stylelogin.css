@@ -72,3 +72,11 @@
     margin-bottom: 10px;
 }
 }
+
+.navbar-nav .nav-item a:hover{
+    background-color: rgb(109, 109, 109);
+  }
+  
+  .navbar-nav .nav-item a button {
+    float: right;
+  }
