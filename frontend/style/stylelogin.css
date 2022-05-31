@@ -72,3 +72,16 @@
     margin-bottom: 10px;
 }
 }
+
+ul li a:hover{
+    color: black;
+}
+
+ul li.active a{
+    background-color: antiquewhite;
+    color: black;
+}
+
+.navbar-nav .nav-item a button{
+    float:right
+}
