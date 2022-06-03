@@ -19,10 +19,21 @@
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
-    .card{
-        border-color: none;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    #keluhan .kotak{
         border-radius: 10px;
+    }
+
+    .card{
+      border-color: #80CEF9;
+    }
+
+    .card button{
+      border-color:#80CEF9; 
+      background-color:#80CEF9;
+      color: white; 
+      font-size: 15px; 
+      font-family: 'tw cen mt'; 
+      margin-top: -15px;
     }
 
     #keluhan h2{
@@ -101,7 +112,7 @@
 <!--Ceritakan Keluhanmu-->
 <section id="keluhan">
   <div class="container">
-    <div class="card col-lg-12 mt-5" style="background-color:#ecf5f9">
+    <div class="card kotak col-lg-12" style="margin-top: 80px;">
       <div class="row">
         <div class="kotak1 col-lg-7 col-md-12 col-sm-12">
           <h2>Ceritakan Keluhanmu Disini !!</h2>
@@ -126,38 +137,38 @@
 </section>
 
 
-<!-- Rincial Khasus -->
+<!-- Rincian Kasus -->
 <div class="container">
   <div class="row d-flex justify-content-center">
-    <h3 style="color: #fc3d3d; font-family: Tw Cen MT; margin-top: 50px; margin-left: 50px; font-size: 30px;">Berikut Rincian Hasil!</h3>
+    <h3 style="color:#00A4FE; font-family: Tw Cen MT; margin-top: 50px; margin-left: 50px; font-size: 30px;">Berikut Rincian Hasil !</h3>
     <div class="col-sm-12 col-md-12 col-lg-7">
       <p style="margin-top: 10px; font-family: Tw Cen MT; font-size: 30px; margin-left: 50px;">Indikasi</p>
-      <p style="margin-left: 50px;">Berdsasarkan keluhan yang anda rasakan anda kemumgkinan menderita sakit maag atau dispepsia adalah rasa tidak nyaman di 
+      <p style="margin-left: 50px; font-size: 20px;">Berdasarkan keluhan yang anda rasakan anda kemumgkinan menderita sakit maag atau dispepsia adalah rasa tidak nyaman di 
         perut, seperti perut terasa penuh, rasa panas pada perut bagian atas, serta kembung. 
         Gejala ini paling sering terjadi selama atau beberapa saat setelah makan. Sakit maag
          merupakan penyakit yang sangat umum terjadi dan biasanya bersifat ringan.<a href="#"> Lainnya..</a></p>
-         
+         <br><p style="margin-top: -30px; font-family: Tw Cen MT; font-size: 30px; margin-left: 50px;">Kasus Terkait</p>
       
     </div>
 
     <div class="col-sm-12 col-md-12 col-lg-5">
       <p style="margin-top: 10px; font-family: Tw Cen MT; font-size: 30px; margin-left: 50px;">Rekomendasi Produk Obat</p>
-<!--obat3-->
-      <div class="card" style="margin-left: 15px;">
+<!--obat1-->
+      <div class="card align-items-center" style="margin-left: 60px; width:300px">
         <div class="card-body">
           <div class="row align-items-center">
             <div class="col-5">
-              <img src="frontend/images/promag-removebg-preview.png" width="80px" height="80px">
+              <img src="frontend/images/promag-removebg-preview.png" width="80px" height="80px" style="margin-left:10px">
             </div>
             <div class="col-7">
              <a target="blank" href="pilihanobat.html" style="text-decoration:none"><p style="color:#515D63; font-family:'tw cen mt'; font-size: 26px;">Promag</p></a>
-            <button type="submit" class="btn btn-custom" style="border-color:#00A4FE; color: #00A4FE; font-size: 15px; font-family: 'tw cen mt'; margin-top: -15px;">Cek Disini</button>
+            <button type="submit" class="btn btn-custom">Cek Disini</button>
             </div>
           </div>
         </div>
       </div>
 <!--obat2-->
-      <div class="card mt-4" style="margin-left: 15px;">
+      <div class="card mt-4 align-items-center" style="margin-left: 60px; width: 300px;">
         <div class="card-body">
           <div class="row align-items-center">
             <div class="col-5">
@@ -165,12 +176,13 @@
             </div>
             <div class="col-7">
              <a target="blank" href="pilihanobat.html" style="text-decoration:none"><p style="color:#515D63; font-family:'tw cen mt'; font-size: 20px;">Polysilane</p></a>
+             <button type="submit" class="btn btn-custom">Cek Disini</button>
             </div>
           </div>
         </div>
       </div>
-<!--obat1-->
-      <div class="card mt-4" style="margin-left: 15px;">
+<!--obat3-->
+      <div class="card mt-4 align-items-center" style="margin-left: 60px; width:300px">
         <div class="card-body">
           <div class="row align-items-center">
             <div class="col-5">
@@ -178,19 +190,12 @@
             </div>
             <div class="col-7">
              <a target="blank" href="pilihanobat.html" style="text-decoration:none"><p style="color:#515D63; font-family:'tw cen mt'; font-size: 20px;">Madu Alami</p></a>
+             <button type="submit" class="btn btn-custom">Cek Disini</button>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  
-       
-  </div>
-</div>
-
-<div class="container">
-  <div class="col-sm-12 col-md-12 col-lg-7">
-    <p style="margin-top: 10px; font-family: Tw Cen MT; font-size: 30px; margin-left: 33px;">Khasus Terkait</p>
+    </div> 
   </div>
 </div>
   
@@ -203,7 +208,7 @@
   
         <div class="col-xs-12 col-sm-4 col-md-4">
           <img src="frontend/images/logoo.png" height="70px">
-          <p>Website informasi seputar dunia kesehatan dan solusi kesehatan terpercaya.</p>
+          <p style="color:white; font-family:'tw cen mt'; font-size:20px;"><br>Website informasi seputar dunia kesehatan dan solusi kesehatan terpercaya.</p>
         </div>
   
   <!--Lainnya-->
