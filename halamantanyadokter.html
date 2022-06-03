@@ -14,6 +14,45 @@
     <link rel="stylesheet" type="text/css" href="frontend/style/stylelogin.css">
 </head>
 
+<style>
+.type {
+  border: 2px solid #dedede; 
+  background-color: #f1f1f1; 
+  border-radius: 5px; 
+  padding: 10px; 
+  margin: 10px 0;
+}
+.gelap {
+  border-color: #ccc; 
+  background-color: #ddd;
+}
+.type::after {
+  content: ""; 
+  clear: both; 
+  display: table;
+}
+.type img {
+  float: left; 
+  max-width: 60px; 
+  width: 100%; 
+  margin-right: 20px; 
+  border-radius: 50%;
+}
+.type img.m_right {
+  float: right; 
+  margin-left: 20px; 
+  margin-right:0;
+}
+.right {
+  float: right; 
+  color: #575252;
+}
+.left {
+  float: left; 
+  color: #3b3939;
+  }
+</style>
+
 <body>
 <!-- Navbar -->
 <header class="p-3 bg-success text-white">
@@ -66,8 +105,20 @@
     </div>
 
     <!--Diskusi Kesehatan-->
-<section id="diskusi">
+<section id="diskusi" style="margin-top: 60px;">
+  <div class="container">
+    <div class="type gelap">
+      <img src="frontend/images/akun.png" class="m_right">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas perspiciatis dolorum quod quia totam saepe in tenetur enim autem architecto fugiat maiores, commodi hic sit quaerat alias vitae labore.</p>
+      <span class="left">1:01</span>
+    </div>
 
+    <div class="type">
+      <img src="frontend/images/akun.png">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptatum sunt iste, omnis quas quis facilis a ut architecto odio repellendus officia maxime est, quam quia aliquid! Autem, molestiae enim.</p>
+      <span class="right">13:00</span>
+    </div>
+  </div>
 </section>
 
 <!--Footer-->
