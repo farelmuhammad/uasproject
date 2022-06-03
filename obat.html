@@ -9,54 +9,95 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="frontend/style/stylelogin.css">
+    <link rel="stylesheet" type="text/css" href="frontend/style/styleobat.css">
+
     <title>Pilih Obat Sesuai Kebutuhan Anda !</title>
 </head>
 
 <style>
-  .card:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  #pilihanobat .btk{
+    
   }
 </style>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-custom" style="border-bottom: 1px solid #80CEF9; background-color:#80CEF9;">
-    <div class="container-fluid">
-      <img src="frontend/images/logoo.png" width="280px" height="60px" style="margin-left: 50px;">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 20px; font-size: 15px;">
-        <li class="nav-item">
-          <a target="blank" href="home.html" class="nav-link active" aria-current="page" href="#" style="color: white; padding: 20px 20px; font-family: 'tw cen mt';font-size: 21px; ">Beranda</a>
-        </li>
-        <li class="nav-item">
-          <a target="blank" href="halamantanyadokter.html" class="nav-link active" aria-current="page" href="#" style="color: white; padding: 20px 1px; font-family: 'tw cen mt';font-size: 21px;">Tanya Dokter</a>
-        </li>
-        <li class="nav-item">
-          <a target="blank" href="artikel.html" class="nav-link active" aria-current="page" href="#" style="color: white; padding: 20px 20px;font-family: 'tw cen mt';font-size: 21px;">Artikel</a>
-        </li>
-        <li class="nav-item">
-         <a target="blank" href="login.html"><button type="submit" class="btn btn-custom btn-lg" style="color:white; background-color:#00A4FE; padding: 6px 8px; margin-top: 5px; font-size: 18px; margin-top: 15px;margin-left: 7px;font-family: 'tw cen mt';">Daftar</button></a>
-        </li>
-      <form class="d-flex" style="margin-left: 270px;">
-        <input class="form-control me-2" type="search" placeholder="Cari Disini" aria-label="Cari Disini" style="border-color: #00A4FE; text-align: center; height: 30px; margin-top: 15px; border-radius: 50px;">
-      </form>
-    </div>
-    </div>
+  <header class="p-3 bg-success text-white">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-succes" style="background-color:#80CEF9;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="frontend/images/logoo.png" alt="mainlogo" width="250" height="50" class="d- inline-block align-text-left">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="font-family:'tw cen mt'; font-size: 18px;">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" target="blank" href="halamantanyadokter.html" style="font-family:'tw cen mt'; font-size: 18px;">Tanya Dokter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" target="blank" href="artikel.html" style="font-family:'tw cen mt'; font-size: 18px;">Artikel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" target="blank" href="login.html" style="font-family:'tw cen mt'; font-size: 18px;border-color: #00A4FE; color:#00A4FE;">Daftar</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search" style="border-radius:150px">
+          </form>
+        </div>
+      </div>
     </nav>
+  </header>
+
+  <!--tulisan dibawah navbar--> 
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav" style="margin-left:50px">
+        <a class="nav-link active" aria-current="page" href="home.html" style="color: #515D63;">Beranda</a>
+        <a class="nav-link" href="obat.html" style="color:  #00A4FE;">Obat</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!--tulisan dibawah navbar--> 
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav" style="margin-left:50px">
+        <a class="nav-link active" aria-current="page" href="home.html" style="color: #515D63;">Beranda</a>
+        <a class="nav-link" href="obat.html" style="color:  #00A4FE;">Obat</a>
+      </div>
+    </div>
+  </div>
+</nav>
+ 
 
 
     <!-- Pilihan Obat Apa Saja-->
-    <section>
+    <section id="pilihanobat">
       <div class="container">
-        <div class="card mt-5 mx-2" style="border-color: none;
+        <div class="card mx-2" style="border-color: none;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 10px;">
+        border-radius: 10px; margin-top: 40px;">
           <h4 style="margin-top:15px; margin-left:10px">Pilih Obat Sesuai Kebutuhan Anda !</h4>
         <div class="row">
           <div class="obat col-lg-4 col-md-12 col-sm-12">
 
             <!--Batuk dan Flu-->
-           <div class="card mt-4" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
+           <div class="card btk mt-4" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -70,7 +111,7 @@
             </div>
 
             <!--Mata-->
-            <div class="card mt-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
+            <div class="card btk mt-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -84,7 +125,7 @@
             </div>
       
             <!--Asma-->
-            <div class="card mt-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
+            <div class="card btk mt-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -100,7 +141,7 @@
 
           <!--Mulut-->
           <div class="obat col-lg-4 col-md-12 col-sm-12">
-            <div class="card mt-4" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
+            <div class="card btk mt-4" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -114,7 +155,7 @@
             </div>
       
             <!--Jantung-->
-            <div class="card mt-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
+            <div class="card btk mt-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -128,7 +169,7 @@
             </div>
       
             <!--Kulit-->
-            <div class="card mt-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
+            <div class="card btk mt-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -144,7 +185,7 @@
           
           <!--Anti Virus-->
           <div class="obat col-lg-4 col-md-12 col-sm-12">
-            <div class="card mt-4" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;; margin-right: 15px;">
+            <div class="card btk mt-4" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;; margin-right: 15px;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -158,7 +199,7 @@
             </div>
       
             <!--Mental Health-->
-            <div class="card mt-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;;margin-right: 15px;">
+            <div class="card btk mt-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;;margin-right: 15px;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -172,7 +213,7 @@
             </div>
     
             <!--Makanan-->
-            <div class="card mt-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;;margin-right: 15px;">
+            <div class="card btk mt-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;;margin-right: 15px;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -188,7 +229,7 @@
 
           <!--Herbal-->
           <div class="obat col-lg-4 col-md-12 col-sm-12">
-            <div class="card mt-5 mb-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;;margin-left: 15px;">
+            <div class="card btk mt-5 mb-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;;margin-left: 15px;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -204,7 +245,7 @@
 
         <!--Vitamin-->
           <div class="obat col-lg-4 col-md-12 col-sm-12">
-            <div class="card mt-5 mb-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
+            <div class="card btk mt-5 mb-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -220,7 +261,7 @@
 
             <!--Lainnya-->
             <div class="obat col-lg-4 col-md-12 col-sm-12">
-              <div class="card mt-5 mb-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;;margin-right: 15px;">
+              <div class="card btk mt-5 mb-5" style="border-radius: 20px; margin-left: 15px; background-color: #D5EFFE;;margin-right: 15px;">
                 <div class="card-body">
                   <div class="row align-items-center">
                     <div class="col-5">

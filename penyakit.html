@@ -18,45 +18,57 @@
   .card:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+  .item{
+    width:300px;
+    height:110px;
+  }
 </style>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-custom" style="border-bottom: 1px solid #80CEF9; background-color:#80CEF9;">
-    <div class="container-fluid">
-      <img src="frontend/images/logoo.png" width="280px" height="60px" style="margin-left: 50px;">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 20px; font-size: 15px;">
-        <li class="nav-item">
-          <a target="blank" href="home.html" class="nav-link active" aria-current="page" href="#" style="color: white; padding: 20px 20px; font-family: 'tw cen mt';font-size: 21px; ">Beranda</a>
-        </li>
-        <li class="nav-item">
-          <a target="blank" href="halamantanyadokter.html" class="nav-link active" aria-current="page" href="#" style="color: white; padding: 20px 1px; font-family: 'tw cen mt';font-size: 21px;">Tanya Dokter</a>
-        </li>
-        <li class="nav-item">
-          <a target="blank" href="artikel.html" class="nav-link active" aria-current="page" href="#" style="color: white; padding: 20px 20px;font-family: 'tw cen mt';font-size: 21px;">Artikel</a>
-        </li>
-        <li class="nav-item">
-         <a target="blank" href="login.html"><button type="submit" class="btn btn-custom btn-lg" style="color:white; background-color:#00A4FE; padding: 6px 8px; margin-top: 5px; font-size: 18px; margin-top: 15px;margin-left: 7px;font-family: 'tw cen mt';">Daftar</button></a>
-        </li>
-      <form class="d-flex" style="margin-left: 270px;">
-        <input class="form-control me-2" type="search" placeholder="Cari Disini" aria-label="Cari Disini" style="border-color: #00A4FE; text-align: center; height: 30px; margin-top: 15px; border-radius: 50px;">
-      </form>
-    </div>
-    </div>
+  <header class="p-3 bg-success text-white">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-succes" style="background-color:#80CEF9;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="frontend/images/logoo.png" alt="mainlogo" width="250" height="50" class="d- inline-block align-text-left">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="font-family:'tw cen mt'; font-size: 18px;">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" target="blank" href="halamantanyadokter.html" style="font-family:'tw cen mt'; font-size: 18px;">Tanya Dokter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" target="blank" href="artikel.html" style="font-family:'tw cen mt'; font-size: 18px;">Artikel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" target="blank" href="login.html" style="font-family:'tw cen mt'; font-size: 18px;border-color: #00A4FE;background-color:#00A4FE;">Daftar</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search" style="border-radius:150px">
+          </form>
+        </div>
+      </div>
     </nav>
-
+  </header>
 
     <!-- Pilihan Info Penyakit Apa Saja -->
 
     <section id="isi">
       <div class="container">
-        <div class="card mt-5 mx-2" style="border-color:#00A4FE">
-          <h4 style="margin-top:15px; margin-left:10px">Dapatkan Info Penyakit Dibawah ini !</h4>
+        <div class="card mx-2" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 20px;margin-top: 100px;">
+          <h4 style="margin-top:15px; margin-left:10px; margin-bottom:5px">Dapatkan Info Penyakit Dibawah ini !</h4>
         <div class="row">
           <div class="obat col-lg-4 col-md-12 col-sm-12">
 
             <!--Lambung-->
-           <div class="card mt-4" style="background-color: #D5EFFE;;border-radius: 20px; margin-left: 15px;">
+           <div class="card item mt-4" style="background-color: #D5EFFE;;border-radius: 20px; margin-left: 15px;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -70,7 +82,7 @@
             </div>
 
             <!--Paru-Paru-->
-            <div class="card mt-5" style="background-color: #D5EFFE; border-radius: 20px;  margin-left: 15px;">
+            <div class="card item mt-5" style="background-color: #D5EFFE; border-radius: 20px;  margin-left: 15px;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -84,7 +96,7 @@
             </div>
       
             <!--Mata-->
-            <div class="card mt-5" style="background-color: #D5EFFE;border-radius: 20px; margin-left: 15px;">
+            <div class="card item mt-5" style="background-color: #D5EFFE;border-radius: 20px; margin-left: 15px;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -99,7 +111,7 @@
 
           <!--kulit-->
           <div class="obat col-lg-4 col-md-12 col-sm-12">
-            <div class="card mt-4" style="background-color: #D5EFFE; border-radius: 20px;">
+            <div class="card item mt-4" style="background-color: #D5EFFE; border-radius: 20px;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -112,7 +124,7 @@
             </div>
       
             <!--Saraf-->
-            <div class="card mt-5" style="background-color: #D5EFFE; border-radius: 20px;">
+            <div class="card item mt-5" style="background-color: #D5EFFE; border-radius: 20px;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -126,7 +138,7 @@
             </div>
       
             <!--Hati-->
-            <div class="card mt-5" style="background-color: #D5EFFE; border-radius: 20px;">
+            <div class="card item mt-5" style="background-color: #D5EFFE; border-radius: 20px;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -142,7 +154,7 @@
           
           <!--Reproduksi-->
           <div class="obat col-lg-4 col-md-12 col-sm-12">
-            <div class="card mt-4" style="background-color: #D5EFFE; border-radius: 20px;; margin-right: 15px;">
+            <div class="card item mt-4" style="background-color: #D5EFFE; border-radius: 20px;; margin-right: 15px;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -156,7 +168,7 @@
             </div>
       
             <!--Telinga-->
-            <div class="card mt-5" style="background-color: #D5EFFE; border-radius: 20px; margin-right: 15px;">
+            <div class="card item mt-5" style="background-color: #D5EFFE; border-radius: 20px; margin-right: 15px;">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-5">
@@ -170,15 +182,10 @@
             </div>
     
             <!--Lainnya-->
-            <div class="card mt-5" style="background-color: #D5EFFE; border-radius: 20px;margin-right: 15px; margin-bottom: 20px;">
+            <div class="card item mt-5" style="background-color: #D5EFFE; border-radius: 20px;margin-right: 15px; margin-bottom: 20px;">
               <div class="card-body">
                 <div class="row align-items-center">
-                  <div class="col-5">
-                    <img src="frontend/images/paru paru.png" width="80px" height="80px">
-                  </div>
-                  <div class="col-7">
                     <a target="blank" href="infopenyakit.html" style="text-decoration:none"><h6 style="color:#515D63; font-family:'tw cen mt'; font-size: 30px;">Lainnya</h6></a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -191,8 +198,8 @@
     <div class="container mt-5">
       <div class="row justify-content-center">
           <div class="col-sm-12 col-md-8 col-lg-12 align-self-center">
-            <h5>Layanan Info Penyakit</h5>
-            <p>HealthyPage memberikan informasi mengenai suatu Penyakit kepada 
+            <h5 style="margin-left:30px">Layanan Info Penyakit</h5>
+            <p style="margin-left:30px">HealthyPage memberikan informasi mengenai suatu Penyakit kepada 
                 pengunjung nya.Hal ini sangat bermanfaat bagi pembaca yang ingin
                 menemukan atau mengetahui sebuah penyakit tertentu. </p>
           </div>
