@@ -27,6 +27,21 @@
   text-align: center;
   padding-top: 20px;
 }
+#pilihaninfo .pkt:hover{
+  background-color:#80CEF9;
+  color:white;
+}
+#pilihaninfo .card h6{
+  font-family: 'tw cen mt';
+  font-size: 25px;
+  text-align: center;
+  color:#00A4FE
+}
+#pilihaninfo .card img{
+  width:100px;
+  height:80px;
+  display: flex;
+}
 #pilihaninfo .penyakit p{
   color:black;
   font-size: 15px;
@@ -41,22 +56,14 @@
   margin-right: 70px;
 }
 #pilihaninfo .penyakit .card{
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color:#80CEF9;
   box-shadow: none;
   margin-right: 10px;
   margin-left: 10px;
   background-color: white;
   border-radius: 10px; 
 }
-#pilihaninfo .penyakit button{
-  color:#00A4FE;
-  border-color: #00A4FE;
-  font-family: 'tw cen mt';
-  font-size: 15px;
-}
-#pilihaninfo .penyakit button:hover{
-  background-color:#80CEF9;
-  color:white;
+
 }
 </style>
 <body>
@@ -74,7 +81,7 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" style="font-family:'tw cen mt'; font-size: 18px;">Beranda</a>
+                <a class="nav-link active" aria-current="page" href="home.html" style="font-family:'tw cen mt'; font-size: 18px;">Beranda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" target="blank" href="halamantanyadokter.html" style="font-family:'tw cen mt'; font-size: 18px;">Tanya Dokter</a>
@@ -83,7 +90,7 @@
                 <a class="nav-link active" target="blank" href="artikel.html" style="font-family:'tw cen mt'; font-size: 18px;">Artikel</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" target="blank" href="login.html" style="font-family:'tw cen mt'; font-size: 18px;border-color: #00A4FE; color:#00A4FE">Daftar</a>
+                <a class="nav-link active" target="blank" href="login.html" style="font-family:'tw cen mt'; font-size: 18px;">Daftar</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -119,21 +126,21 @@
             <h5>Dapatkan info penyakit lambung apa yang anda inginkan dibawah ini !</h5>
              
           <div class="row">
-            <div class="penyakit col-lg-4 col-md-6 col-sm-12">
+            <div class="penyakit col-lg-4 col-md-6 col-sm-6">
               <!--1-->
-             <div class="card mt-4" style="margin-left: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+             <div class="card pkt mt-4" style="margin-left: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="card-body">
-                  <div class="row align-items-center">
-                      <img src="frontend/images/asamlambung.png">
-                     <h6>Asam Lambung</h6>
+                  <div class="row justify-content-center">
+                      <img src="frontend/images/dispesia.png">
+                    <a target="blank" href="penyakit.html" style="text-decoration:none; color:#515D63"><h6>Asam Lambung</h6></a>
                   </div>
                 </div>
               </div>
   
               <!--2-->
-              <div class="card mt-4" style="margin-left: 30px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              <div class="card pkt mt-4" style="margin-left: 30px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="card-body">
-                  <div class="row align-items-center">
+                  <div class="row justify-content-center">
                       <img src="frontend/images/dispesia.png">
                      <h6>Sindrom Dispepsia</h6>
                   </div>
@@ -141,9 +148,9 @@
               </div>
         
               <!--3-->
-              <div class="card mt-4" style="margin-left: 30px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              <div class="card pkt mt-4" style="margin-left: 30px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="card-body">
-                  <div class="row align-items-center">
+                  <div class="row justify-content-center">
                       <img src="frontend/images/gastroparesis.png">
                      <h6>Gastroparesis</h6>
                   </div>
@@ -152,10 +159,10 @@
             </div>
   
             <!--5-->
-            <div class="penyakit col-lg-4 col-md-6 col-sm-12">
-              <div class="card mt-4" style="margin-left: 30px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <div class="penyakit col-lg-4 col-md-6 col-sm-6">
+              <div class="card pkt mt-4" style="margin-left: 30px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="card-body">
-                  <div class="row align-items-center">
+                  <div class="row justify-content-center">
                       <img src="frontend/images/gastritis.png">
                      <h6>Gastritis</h6>
                   </div>
@@ -163,20 +170,20 @@
               </div>
         
               <!--6-->
-              <div class="card mt-4" style="margin-left: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              <div class="card pkt mt-4" style="margin-left: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="card-body">
-                  <div class="row align-items-center">
-                      <img src="frontend/images/E-removebg-preview.png">
+                  <div class="row justify-content-center">
+                      <img src="frontend/images/L1-removebg-preview.png">
                      <h6>Tukak Lambung</h6>
                   </div>
                 </div>
               </div>
         
               <!--7-->
-              <div class="card mt-4" style="margin-left: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              <div class="card pkt mt-4" style="margin-left: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="card-body">
-                  <div class="row align-items-center">
-                      <img src="frontend/images/F-removebg-preview.png">
+                  <div class="row justify-content-center">
+                      <img src="frontend/images/L2-removebg-preview.png">
                      <h6>Kanker Lambung</h6>
                   </div>
                 </div>
@@ -184,55 +191,43 @@
             </div>
             
             <!--9-->
-            <div class="penyakit col-lg-4 col-md-6 col-sm-12">
-              <div class="card mt-4" style="margin-left: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <div class="penyakit col-lg-4 col-md-6 col-sm-6">
+              <div class="card pkt mt-4" style="margin-left: 30px; margin-right: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="card-body">
-                  <div class="row align-items-center">
-                      <img src="frontend/images/G-removebg-preview.png">
-                     <h6>Rhinos JR</h6>
+                  <div class="row justify-content-center">
+                      <img src="frontend/images/L3-removebg-preview.png">
+                     <h6>Tukak Lambung</h6>
                   </div>
                 </div>
               </div>
         
               <!--10-->
-              <div class="card mt-4" style="margin-left: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              <div class="card pkt mt-4" style="margin-left: 30px;margin-right: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="card-body">
-                  <div class="row align-items-center">
-                      <img src="frontend/images/H-removebg-preview.png">
-                     <h6>Rhinos JR</h6>
+                  <div class="row justify-content-center">
+                      <img src="frontend/images/L4-removebg-preview.png">
+                     <h6>Sindrom Dispepsia</h6>
                   </div>
                 </div>
               </div>
       
               <!--11-->
-              <div class="card mt-4" style="margin-left: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              <div class="card pkt mt-4 mb-5" style="margin-left: 30px;margin-right: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="card-body">
-                  <div class="row align-items-center">
-                      <img src="frontend/images/I-removebg-preview.png">
-                     <h6>Rhinos JR</h6>
+                  <div class="row justify-content-center">
+                      <img src="frontend/images/L5-removebg-preview.png">
+                     <h6>Mag</h6>
                   </div>
                 </div>
               </div>
             </div>
-  
-            <!--13-->
-            
-
-              <!--14-->
-             
-
-              <!--15-->
-              
-
-              <!--16-->
-              
+            <center>
+              <div class="button mb-5 mt-3">
+                    <button type="button" class="btn btn-success" style="width: 100px; height: 40px;background-color: #80CEF9;border-color: #80CEF9; font-family: 'tw cen mt';"> Lainnya </button>
+              </div>
+              </center>
             </div>
           </div>
-          <center>
-            <div class="button mb-5 mt-5">
-                  <button type="button" class="btn btn-success" style="width: 100px; height: 40px;background-color: #80CEF9;border-color: #80CEF9; font-family: 'tw cen mt';"> Lainnya </button>
-            </div>
-            </center>
           </div>
         </div>
       </section>

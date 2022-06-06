@@ -14,10 +14,10 @@
 </head>
 
 <style>
+  
 
 #pilihan .obat img{
   width:70px;
-  height: 70px;
   display:flex;
   width:150px; 
   height: 180px;
@@ -42,7 +42,7 @@
   margin-right: 70px;
 }
 #pilihan .obat .card{
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color:#80CEF9;
   box-shadow: none;
   margin-right: 10px;
   margin-left: 10px;
@@ -76,7 +76,7 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" style="font-family:'tw cen mt'; font-size: 18px;">Beranda</a>
+                <a class="nav-link active" aria-current="page" href="home.html" style="font-family:'tw cen mt'; font-size: 18px;">Beranda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" target="blank" href="halamantanyadokter.html" style="font-family:'tw cen mt'; font-size: 18px;">Tanya Dokter</a>
@@ -85,7 +85,7 @@
                 <a class="nav-link active" target="blank" href="artikel.html" style="font-family:'tw cen mt'; font-size: 18px;">Artikel</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" target="blank" href="login.html" style="font-family:'tw cen mt'; font-size: 18px;border-color: #00A4FE; color:#00A4FE;">Daftar</a>
+                <a class="nav-link active" target="blank" href="login.html" style="font-family:'tw cen mt'; font-size: 18px;">Daftar</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -103,7 +103,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav" style="margin-top:50px">
+        <div class="navbar-nav" style="margin-top:50px; margin-left: 48px;">
           <a class="nav-link active" aria-current="page" href="home.html" style="color:#515D63">Beranda</a>
           <a class="nav-link" href="obat.html" style="color: #515D63;">Obat</a>
           <a class="nav-link" href="#" style="color:  #00A4FE;">Batuk dan Flu</a>
@@ -116,13 +116,12 @@
       <section id="pilihan">
         <div class="container">
           <div class="card mt-5">
-            <img src="frontend/images/btk.png" width="320px" height="70px">
-            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." style="margin-left:30px; margin-top:30px; margin-right: 50px; width: 920px;">
-            <datalist id="datalistOptions">
-              <option value="Rekomendasi">
-              <option value="Apotek Terdekat">
-            </datalist>
-             
+            <div class="card-body">
+            <img  src="frontend/images/btk.png" width="300px" height="70px ">
+            <div class="row text-center nomor justify-content-center">
+               <input class="form-control mt-2 " type="text" placeholder="Search" aria-label="default input example" style="width: 800px;">
+            </div>
+            </div>
           <div class="row">
             <div class="obat col-lg-3 col-md-6 col-sm-12">
               <!--1-->
@@ -131,7 +130,7 @@
                   <div class="row align-items-center">
                       <img src="frontend/images/A-removebg-preview.png">
                      <h6>Shanadaryl</h6>
-                     <p>Butuh 4 tablet</p>
+                     <p>Butuh 1 botol</p>
                      <button type="submit" class="btn btn-outline-info btn-md">Tambah</button>
                   </div>
                 </div>
@@ -142,8 +141,8 @@
                 <div class="card-body">
                   <div class="row align-items-center">
                       <img src="frontend/images/B-removebg-preview.png">
-                     <h6>Rhinos JR</h6>
-                     <p>Butuh 4 tablet</p>
+                     <h6>OBH Batuk Hitam</h6>
+                     <p>Butuh 1 botol</p>
                      <button type="submit" class="btn btn-custom btn-md">Tambah</button>
                   </div>
                 </div>
@@ -154,8 +153,8 @@
                 <div class="card-body">
                   <div class="row align-items-center">
                       <img src="frontend/images/C-removebg-preview.png">
-                     <h6>Rhinos JR</h6>
-                     <p>Butuh 4 tablet</p>
+                     <h6>Ikadryl</h6>
+                     <p>Rasa Apel</p>
                      <button type="submit" class="btn btn-custom btn-md">Tambah</button>
                   </div>
                 </div>
@@ -168,8 +167,8 @@
                 <div class="card-body">
                   <div class="row align-items-center">
                       <img src="frontend/images/D-removebg-preview.png">
-                     <h6>Rhinos JR</h6>
-                     <p>Butuh 4 tablet</p>
+                     <h6>Siladex Antitusive</h6>
+                     <p>untuk tidak berdahak</p>
                      <button type="submit" class="btn btn-custom btn-md">Tambah</button>
                   </div>
                 </div>
@@ -180,8 +179,8 @@
                 <div class="card-body">
                   <div class="row align-items-center">
                       <img src="frontend/images/E-removebg-preview.png">
-                     <h6>Rhinos JR</h6>
-                     <p>Butuh 4 tablet</p>
+                     <h6>No Cough</h6>
+                     <p>1 botol</p>
                      <button type="submit" class="btn btn-custom btn-md">Tambah</button>
                   </div>
                 </div>
@@ -192,8 +191,8 @@
                 <div class="card-body">
                   <div class="row align-items-center">
                       <img src="frontend/images/F-removebg-preview.png">
-                     <h6>Rhinos JR</h6>
-                     <p>Butuh 4 tablet</p>
+                     <h6>Sanadryl</h6>
+                     <p>Untuk anak anak</p>
                      <button type="submit" class="btn btn-custom btn-md">Tambah</button>
                   </div>
                 </div>
@@ -206,8 +205,8 @@
                 <div class="card-body">
                   <div class="row align-items-center">
                       <img src="frontend/images/G-removebg-preview.png">
-                     <h6>Rhinos JR</h6>
-                     <p>Butuh 4 tablet</p>
+                     <h6>Dextromethorpan</h6>
+                     <p>Butuh 1 botol</p>
                      <button type="submit" class="btn btn-custom btn-md">Tambah</button>
                   </div>
                 </div>
@@ -218,8 +217,8 @@
                 <div class="card-body">
                   <div class="row align-items-center">
                       <img src="frontend/images/H-removebg-preview.png">
-                     <h6>Rhinos JR</h6>
-                     <p>Butuh 4 tablet</p>
+                     <h6>Formula Vicks</h6>
+                     <p>Butuh 1 botol</p>
                      <button type="submit" class="btn btn-custom btn-md">Tambah</button>
                   </div>
                 </div>
@@ -230,8 +229,8 @@
                 <div class="card-body">
                   <div class="row align-items-center">
                       <img src="frontend/images/I-removebg-preview.png">
-                     <h6>Rhinos JR</h6>
-                     <p>Butuh 4 tablet</p>
+                     <h6>HerbaKOF</h6>
+                     <p>Butuh 1 botol</p>
                      <button type="submit" class="btn btn-custom btn-md">Tambah</button>
                   </div>
                 </div>
@@ -244,8 +243,8 @@
                 <div class="card-body">
                   <div class="row align-items-center">
                       <img src="frontend/images/J.jpg">
-                     <h6>Rhinos JR</h6>
-                     <p>Butuh 4 tablet</p>
+                     <h6>Sanadril</h6>
+                     <p>Butuh 1 botol</p>
                      <button type="submit" class="btn btn-custom btn-md">Tambah</button>
                   </div>
                 </div>
@@ -256,7 +255,7 @@
                 <div class="card-body">
                   <div class="row align-items-center">
                       <img src="frontend/images/K.jpg">
-                     <h6>Rhinos JR</h6>
+                     <h6>Acetylcysteine</h6>
                      <p>Butuh 4 tablet</p>
                      <button type="submit" class="btn btn-custom btn-md">Tambah</button>
                   </div>
@@ -268,8 +267,8 @@
                 <div class="card-body">
                   <div class="row align-items-center">
                       <img src="frontend/images/L.jpg">
-                     <h6>Rhinos JR</h6>
-                     <p>Butuh 4 tablet</p>
+                     <h6>Demacolin</h6>
+                     <p>Butuh 5 tablet</p>
                      <button type="submit" class="btn btn-custom btn-md">Tambah</button>
                   </div>
                 </div>
